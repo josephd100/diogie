@@ -56,4 +56,5 @@ with open("automated_orders.csv", "a", newline="") as f:
                 }
                 rowdict.update(order_data)
                 writer.writerow(rowdict)
+                
 shopify.ShopifyResource.clear_session()
